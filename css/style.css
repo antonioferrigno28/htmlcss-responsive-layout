@@ -6,13 +6,14 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: #222;
   line-height: 1.5;
   background-color: #ddd;
 }
 
 main p {
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 35px;
 }
 
 /* container */
@@ -23,6 +24,14 @@ main p {
   max-width: 100%;
 }
 
+/* section format */
+
+.margin-section {
+  margin: 0 10px 50px 10px;
+}
+
+/* MISC */
+
 h1 {
   font-family: "Nerko One", cursive;
   font-size: 80px;
@@ -31,21 +40,16 @@ h1 {
   font-weight: normal;
   text-shadow: 2px 2px 2px #979797;
   background-color: white;
+  white-space: nowrap;
 }
 
 .small-col h2 {
-  margin: 0 30px 30px 30px;
+  margin: 30px;
 }
 
 h3 {
-  color: rgb(75, 14, 172);
+  color: rgb(124, 104, 163);
   font-size: 30px;
-}
-
-.margin-section .second-title span {
-  color: rgb(75, 14, 172);
-  font-size: 30px;
-  font-weight: bold;
 }
 
 h4 {
@@ -55,6 +59,13 @@ h4 {
   margin-top: 20px;
 }
 
+.margin-section .second-title span {
+  color: (124, 104, 163rgb);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* hero */
 .big-col {
   margin-top: 10px;
   position: relative;
@@ -73,7 +84,7 @@ h4 {
 .small-col {
   background-color: white;
   box-shadow: 2px 2px 2px #979797;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .buttons-col {
@@ -82,13 +93,19 @@ h4 {
   margin-top: 30px;
 }
 
+.buttons-col a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0px 5px;
+}
+
 .list-item-span {
   font-weight: bold;
 }
 
 li {
   list-style-type: none;
-  margin: 20px 30px;
+  padding: 20px 30px;
 }
 
 .btn {
@@ -97,11 +114,18 @@ li {
   box-shadow: 2px 2px 2px #979797;
   padding: 10px 15px;
   border-radius: 30px;
+  display: inline-block;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
 }
 
 img {
   width: 100%;
 }
+
+/* presentation section */
 
 .presentation {
   margin-bottom: 30px;
@@ -125,12 +149,19 @@ img {
   font-weight: bold;
 }
 
+.presentation h4 {
+  font-size: 2rem;
+  color: #222;
+}
+
+/* footer */
+
 footer {
   margin-top: 50px;
 }
 
 footer > .container {
-  background-color: rgb(157, 85, 175);
+  background-color: rgb(124, 104, 163);
   color: white;
   text-align: center;
   display: flex;
@@ -144,20 +175,11 @@ footer a {
 
 footer li {
   display: inline-block;
-  margin: 10px 30px;
+  padding: 7px 3px;
 }
 
 footer h2 {
   margin: 20px 0;
-}
-
-.presentation h4 {
-  font-size: 2rem;
-  color: #222;
-}
-
-.margin-section {
-  margin: 0 10px 50px 10px;
 }
 
 .d-block {
@@ -245,18 +267,18 @@ footer h2 {
   header h1 {
     text-align: left;
     font-size: 100px;
+    padding: 0 20px;
   }
 
   .small-col li {
-    display: inline;
     white-space: nowrap;
     line-height: 40px;
-    width: 20%;
+
     display: inline-block;
   }
 
   .margin-section h3 {
-    color: rgb(75, 14, 172);
+    color: rgb(124, 104, 163);
     font-size: 40px;
     font-weight: bold;
     display: inline;
@@ -264,7 +286,7 @@ footer h2 {
 
   .second-title {
     display: inline;
-    color: rgb(75, 14, 172);
+    color: rgb(124, 104, 163);
     font-size: 30px;
     font-weight: bold;
   }
@@ -325,7 +347,7 @@ footer h2 {
   }
 
   .recipe-cols .small-col {
-    width: 30%;
+    width: 35%;
   }
 
   .small-col li {
@@ -356,15 +378,18 @@ footer h2 {
   }
 
   footer li {
-    width: 10%;
     white-space: nowrap;
+    font-size: 0.9rem;
   }
 
   footer .lower-footer {
     margin: 0 20px;
     width: 50%;
+    text-align: right;
   }
 }
+
+/* BONUS */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .btn {
